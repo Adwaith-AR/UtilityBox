@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+          font-family: "Roboto", sans-serif;
+          background: #0b0f19;
+          color: #e5e7eb;
+}
+
+main {
+          height: auto;
+          padding: 30px;
+}
+
+main>h1 {
+          font-family: "Roboto", sans-serif;
+          text-align: center;
+          font-size: 6em;
+          margin-bottom: 30px;
+}
+
+main>p {
+          font-family: "Roboto", sans-serif;
+          font-size: 25px;
+          opacity: 0.8;
+          text-align: center;
+}
+
+#searchCotainer {
+          background: #121826;
+          border-radius: 15px;
+          overflow: hidden;
+          justify-self: center;
+          width: 40%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          border: 1px solid #1f2937;
+}
+
+#searchBox {
+          color: white;
+          padding: 0px 30px;
+          background: none;
+          border: none;
+          outline: none;
+          width: 80%;
+}
+
+#searchBtn {
+          margin-right: 20px;
+          width: 17%;
+          height: 80%;
+          align-self: center;
+          background: #182958;
+          border: none;
+          color: white;
+          font-size: 1.4em;
+          border-radius: 12px;
+}
+
+#tools_container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 40px;
+          margin-top: 150px;
+}
+#clearBtn{
+          margin-right: 10px;
+          width: 50px;
+}
+
+
+.tools {
+          border-radius: 15px;
+          padding: 15px;
+          display: grid;
+          grid-columns: 1fr;
+          justify-content: center;
+          width: 514px;
+          background: #121826;
+          height: 530px;
+}
+
+.tools img {
+          border-radius: 10px;
+          width: 510px;
+          height: 400px;
+}
+
+.tools h4 {
+          text-align: center;
+          font-size: 2em;
+}
+
