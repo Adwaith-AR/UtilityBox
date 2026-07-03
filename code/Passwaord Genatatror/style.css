@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+          font-family: "Nunito", sans-serif;
+          background: #050e28;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0px;
+}
+
+button {
+          cursor: pointer;
+}
+
+#mainContainer {
+          height: 50vh;
+          width: 70vh;
+          border-radius: 20px;
+          border: 1px solid #1b243d;
+          padding: 20px;
+          text-align: center;
+          background: #0b142c;
+
+}
+
+#outputContainer {
+          background: #182137;
+          border: 1px solid #283048;
+          height: 15%;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
+#sliderLable {
+          width: 100%;
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+}
+.sliderLable1{
+          
+          color: white;
+          width: fit-content;
+}
+#passLength {
+          width: 100%;
+          appearance: none;
+          background: #18213b;
+          outline: none;
+          height: 10px;
+          border-radius: 5px;
+          margin-bottom: 20px;
+
+
+}
+
+#passLength::-webkit-slider-thumb {
+          appearance: none;
+          width: 20px;
+          height: 20px;
+          background: #5156f3;
+          border-radius: 50%;
+          cursor: pointer;
+
+}
+
+#passLength::-moz-range-thumb {
+          appearance: none;
+          width: 20px;
+          height: 20px;
+          background: #5156f3;
+          border-radius: 50%;
+          cursor: pointer;
+}
+
+#inputContainer {
+          place-items: center;
+          width: 100%;
+          display: grid;
+          grid-row-start: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+          height: 35%;
+
+}
+
+#inputContainer>button {
+          height: 73%;
+          width: 87%;
+          font-family: "Nunito", sans-serif;
+          border: none;
+          border-radius: 10px;
+          background: #182137;
+          align-self: center;
+          color: white;
+}
+
+#generatorBtn {
+          font-family: "Nunito", sans-serif;
+          width: 95%;
+          text-align: center;
+          margin-top: 10px;
+          height: 12%;
+          border-radius: 10px;
+          border: none;
+          background: #5157f3;
+          color: white;
+          font-weight: 600;
+          font-size: 20px;
+          transition: 100ms;
+}
+
+#generatorBtn:hover {
+          background: #7b7ff4;
+          scale: 1.01;
+          transition: 100ms;
+
+
+
+}

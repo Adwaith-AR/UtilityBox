@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-          <link rel="stylesheet" href="style.css">
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Password generator</title>
-</head>
-<body>
+
+          <head>
+                    <link rel="stylesheet" href="style.css">
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Password generator</title>
+          </head>
+
+          <body>
+                    <div id="mainContainer">
+                              <p>Your Generated Password</p>
+                              <div id="outputContainer">
+                                        <label id="passwordOutput">jsasad</label>
+                              </div>
+                              <div id="sliderLable">
+                                        <lable class="sliderLable1" >Password Length</lable>
+                                        <lable id="sliderValue" class="sliderLable1" >8</lable>
+                              </div>
+                              <input type="range" max="20" value="8" onclick="slider()" min="1" id="passLength">
+                              <div id="inputContainer">
+                                        <button class="inputbtn" id="UpperCase">UpperCase(A-Z)</button>
+                                        <button class="inputbtn" id="LowerCase">LowerCase(a-z)</button>
+                                        <button class="inputbtn" id="Number">Number(0-9)</button>
+                                        <button class="inputbtn" id="Symbols">Symbols(@#&?)</button>
+                              </div>
+                              <button id="generatorBtn"><img src="" alt="">Generate Password</button>
+                    </div>
 
 
 
-          <script src="app.js"></script>
-</body>
+                    <script src="app.js"></script>
+          </body>
+
 </html>
