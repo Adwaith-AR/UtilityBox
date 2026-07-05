@@ -24,8 +24,11 @@ button {
           background: #0b142c;
 
 }
-
-#outputContainer {
+h4{
+          text-align: left;
+          color: white;
+}
+#outputContainer {transition: 200ms;
           background: #182137;
           border: 1px solid #283048;
           height: 15%;
@@ -34,17 +37,25 @@ button {
           align-items: center;
           justify-content: center;
 }
+
+#passwordOutput {transition: 200ms;
+          color: white;
+          font-size: 35px;
+}
+
 #sliderLable {
           width: 100%;
           margin-top: 20px;
           display: flex;
           justify-content: space-between;
 }
-.sliderLable1{
-          
+
+.sliderLable1 {
+
           color: white;
           width: fit-content;
 }
+
 #passLength {
           width: 100%;
           appearance: none;
@@ -108,7 +119,7 @@ button {
           background: #5157f3;
           color: white;
           font-weight: 600;
-          font-size: 20px;
+          font-size:2rem;
           transition: 100ms;
 }
 
@@ -119,4 +130,18 @@ button {
 
 
 
+}
+
+.activeBtn {
+          background: #5157f3 !important;
+}
+
+.alertBox {
+          transition: 200ms;
+          border: 1px solid red !important;
+}
+
+.alertText {
+          transition: 200ms;
+          color: red !important;
 }

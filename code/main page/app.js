@@ -1,13 +1,13 @@
 const calculator = document.getElementById("calculator")
 const password = document.getElementById("calculator")
 
-const tools = ["calculator"]
+const tools = ["calculator","PasswordGenarater"]
 
 function ItemCardBuilder(tools) {
           const container = document.getElementById("tools_container")
           const itemsCreated = []
           for (let i = 0; i < tools.length; i++) {
-                    itemsCreated.push(`<div class="tools" id="${tools[i]}"><img src="./img/${tools[i]}.png" alt=""><h4>${tools[i]}</h4></div>`)
+                    itemsCreated.push(`<a href="../${tools[i]}/index.html"><div class="tools" id="${tools[i]}"><img src="../${tools[i]}/img/${tools[i]}.svg"alt="logo"><h4>${tools[i]}</h4></div></a>`)
 
           }
           container.innerHTML = itemsCreated.join("")
