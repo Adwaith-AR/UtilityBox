@@ -7,7 +7,7 @@ function ItemCardBuilder(tools) {
           const container = document.getElementById("tools_container")
           const itemsCreated = []
           for (let i = 0; i < tools.length; i++) {
-                    itemsCreated.push(`<a href="../${tools[i]}/index.html"><div class="tools" id="${tools[i]}"><img src="../${tools[i]}/img/${tools[i]}.svg"alt="logo"><h4>${tools[i]}</h4></div></a>`)
+                    itemsCreated.push(`<a href="./${tools[i]}/index.html"><div class="tools" id="${tools[i]}"><img src="../${tools[i]}/img/${tools[i]}.svg"alt="logo"><h4>${tools[i]}</h4></div></a>`)
 
           }
           container.innerHTML = itemsCreated.join("")
