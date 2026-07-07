@@ -1,7 +1,7 @@
 const calculator = document.getElementById("calculator")
 const password = document.getElementById("calculator")
 
-const tools = ["calculator","PasswordGenarater"]
+const tools = ["calculator", "PasswordGenarater","Stop Watch"]
 
 function ItemCardBuilder(tools) {
           const container = document.getElementById("tools_container")
