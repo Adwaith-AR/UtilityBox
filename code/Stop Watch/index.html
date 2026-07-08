@@ -14,17 +14,28 @@
                     <br>
                     <label id="format" for="">H:M:S:Ms</label>
                     <div id="btnContainer">
-                              <button id="lapsBtn" >Lap</button>
+                              <button onclick="laps()" id="lapsBtn">Lap</button>
                               <button onclick="start(this.innerText)" id="startBtn">Start</button>
                               <button onclick="reset()" id="resetBtn">Reset</button>
                     </div>
                     <div id="lapsContainer">
-                              <div id="lapsContainerHeader"></div>
-                              <div id="lapsContainerData"></div>
-                              
-                              
+                              <div id="lapsContainerHeader">
+                                        <p>Laps History</p>
+                              </div>
+                              <div id="lapsContainerData">
+                                        <div class="lapsData">
+                                                  <p>lap 1</p>
+                                                  <p>00:00:00:00</p>
+                                        </div>
+                                        <div class="lapsData">
+                                                  <p>lap 1</p>
+                                                  <p>00:00:00:00</p>
+                                        </div>
+
+                              </div>
+
+
                     </div>
-                    <div id="lapsContainer"></div>
 
 
 

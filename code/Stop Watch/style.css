@@ -64,28 +64,33 @@ button:nth-child(3) {
 
 #lapsContainer {
           width: 1550px;
-          height: 400px;
-          background: red;
+          height: min-content;
+          background: #151e27;
           margin-top: 30px;
           justify-self: center;
           border-radius: 20px;
+          border: 1px solid #91949a67;
+          display: grid;
 }
 
+#lapsContainerHeader>p {
+          font-size: 2em;
+          margin: 10px;
+}
 
+#lapsContainerData {
+          display: grid;
 
+}
 
+.lapsData {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 30px;
+          padding-right: 30px;
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

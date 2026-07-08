@@ -5,8 +5,8 @@ const lapBtn = document.getElementById("lapBtn")
 let timer = null;
 let startTime = 0, elapsedTime = 0;
 let isRunning = false;
-let lapsTime=""
-
+let currentTimeForLaps=""
+let lapsTimes =[]
 
 function start(state) {
           if (state == "Start") {
@@ -38,7 +38,7 @@ function update() {
           millisecond = String(millisecond).padStart(2,"0")
 
           output.textContent = `${hour}:${minute}:${seconds}:${millisecond}`
-          lapsTime = `${hour}:${minute}:${seconds}:${millisecond}`
+          currentTimeForLaps = `${hour}:${minute}:${seconds}:${millisecond}`
           
 
 }
@@ -50,6 +50,15 @@ function reset() {
           startBtn.classList.remove("stopBtn")
           output.textContent = `00:00:00:00`
          
+
+}
+function laps(){
+          if(startBtn.innerText == "Stop"){
+                    lapsTimes.unshift(currentTimeForLaps)
+                    window.console.log(lapsTimes)
+          }
+
+
 
 }
 
