@@ -2,6 +2,7 @@ const output = document.getElementById("output")
 const startBtn = document.getElementById("startBtn")
 const stopBtn = document.getElementById("stopBtn")
 const lapBtn = document.getElementById("lapBtn")
+const lapsDataContainer = document.getElementById("lapsContainerData");
 let timer = null;
 let startTime = 0, elapsedTime = 0;
 let isRunning = false;
@@ -49,13 +50,15 @@ function reset() {
           startBtn.innerText = "Start"
           startBtn.classList.remove("stopBtn")
           output.textContent = `00:00:00:00`
+          lapsTimes = []
+          lapsDataContainer.innerHTML = ""
          
 
 }
 function laps(){
           if(startBtn.innerText == "Stop"){
-                    lapsTimes.unshift(currentTimeForLaps)
-                    window.console.log(lapsTimes)
+                    lapsTimes.push(`<div class="lapsData"><p>lap ${lapsTimes.length+1}</p><p>${currentTimeForLaps}</p></div>`)
+                    lapsDataContainer.innerHTML= lapsTimes.join("")
           }
 
 

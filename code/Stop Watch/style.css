@@ -63,6 +63,7 @@ button:nth-child(3) {
 }
 
 #lapsContainer {
+          overflow: hidden;
           width: 1550px;
           height: min-content;
           background: #151e27;
@@ -79,7 +80,8 @@ button:nth-child(3) {
 }
 
 #lapsContainerData {
-          display: grid;
+          height: 300px;
+          overflow: auto;
 
 }
 
@@ -92,9 +94,27 @@ button:nth-child(3) {
 
 }
 
+.lapsData>p {
+          font-size: 1.4em;
+}
+
 
 
 
 .stopBtn {
           background: red !important;
+}
+
+::-webkit-scrollbar {
+
+          width: 6px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+          background: #4fd1ff;
+
+          border-radius: 10px;
+
 }
