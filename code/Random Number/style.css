@@ -37,7 +37,6 @@ button {
 
 .container {
           background: #121825;
-          height: 400px;
           width: 525px;
           border-radius: 20px;
           border: 1px solid #212734;
@@ -91,7 +90,7 @@ button {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 30px;
+          gap:20px;
           justify-content: center;
 }
 
@@ -179,7 +178,14 @@ button {
           width: 20% !important;
 
 }
-
+#numOfDigitBtnContainer{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+#numOfDigitBtn{
+          scale: 1.7;
+}
 #resetBtn {
           background: #5157f3;
           width: 100%;
@@ -254,4 +260,8 @@ button {
 .shake {
           border: 3px solid red;
           animation: shake 100ms;
+}
+.blur{
+          pointer-events: none;
+          filter: blur(10px);
 }
