@@ -271,6 +271,8 @@ button {
 @media screen and (max-width:767px) {
 
           body {height: 100dvh;
+                    width: 100dvw;
+                    overflow: hidden;
                     display: block;
                     place-items: center;
           }
