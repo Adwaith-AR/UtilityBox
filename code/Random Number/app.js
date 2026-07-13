@@ -1,6 +1,4 @@
 const display = document.getElementById("display")
-const numOfDigitToDisplay = document.getElementById("numOfDigitToDisplay")
-const numberType = document.getElementById("numberType")
 const numOfDigit = document.getElementById("numOfDigit")
 const min = document.getElementById("min")
 const max = document.getElementById("max")
@@ -214,10 +212,8 @@ function numberDecrease(id) {
 function reset() {
           numOfDigitBtn.checked = false
           numOfDigitStateFun()
-          numOfDigitToDisplay.textContent = "1-Degit Number"
           clearHistory()
           display.textContent = 0
-          numOfDigitToDisplay.textContent = "2-Degit Number"
           max.value = 10
           min.value = 1
           numberType.textContent = "Integers"
@@ -231,7 +227,6 @@ function clearHistory() {
 function Display(randomNumber) {
           display.textContent = randomNumber
           historyData = historyData.reverse()
-          numOfDigitToDisplay.textContent = `${Math.floor(randomNumber).toString().length}-Degit Number`
           historyData.push(`<div class="historyData"><p>${randomNumber}</p><button>😒</button></div>`)
 
           historyContainer.innerHTML = historyData.reverse().join("")

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @keyframes shake {
           0% {
                     transform: translateX(20px)
@@ -24,8 +25,10 @@
 
 
 body {
+          font-family: "Nunito", sans-serif;
           background: #0b0e19;
           display: grid;
+
           height: 100vh;
           grid-template-columns: auto 1fr;
           margin: 0px;
@@ -37,30 +40,25 @@ button {
 
 .container {
           background: #121825;
-          width: 525px;
           border-radius: 20px;
           border: 1px solid #212734;
 }
 
 #displayContainer {
+
           text-align: center;
-          height: 500px;
-          width: 1100px;
+          width: min(1100px, 80vw);
           border-radius: 20px;
+          padding: 20px;
 }
 
 #displayContainer>label:nth-child(1) {
           font-family: "Nunito", sans-serif;
           color: white;
-          font-size: 12em;
+          font-size: min(20vw, 12em);
 }
 
-#displayContainer>label:nth-child(3) {
-          font-family: "Nunito", sans-serif;
-          color: white;
-          opacity: 0.6;
-          font-size: 2em;
-}
+
 
 #displayContainer>div {
           display: flex;
@@ -72,7 +70,7 @@ button {
 #displayContainer>div>button {
           height: 70px;
           font-family: "Nunito", sans-serif;
-          width: 300px;
+          width: min(30vw, 300px);
           background: #5157f3;
           border: none;
           color: white;
@@ -90,7 +88,7 @@ button {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap:20px;
+          gap: 20px;
           justify-content: center;
 }
 
@@ -178,14 +176,17 @@ button {
           width: 20% !important;
 
 }
-#numOfDigitBtnContainer{
+
+#numOfDigitBtnContainer {
           display: flex;
           align-items: center;
           justify-content: space-between;
 }
-#numOfDigitBtn{
+
+#numOfDigitBtn {
           scale: 1.7;
 }
+
 #resetBtn {
           background: #5157f3;
           width: 100%;
@@ -202,7 +203,6 @@ button {
           padding: 40px;
           padding-top: 20px;
           padding-bottom: 0px;
-          overflow: auto;
           font-family: "Nunito", sans-serif;
 }
 
@@ -261,7 +261,29 @@ button {
           border: 3px solid red;
           animation: shake 100ms;
 }
-.blur{
+
+.blur {
           pointer-events: none;
           filter: blur(10px);
+}
+
+@media screen and (max-width:767px) {
+
+          body {
+                    display: block;
+                    place-items: center;
+          }
+
+          #outContainer {
+                    padding-top: 10px;
+                    padding-left: 10px;
+          }
+
+          #inContainer {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 20px;
+                    justify-content: center;
+          }
 }
