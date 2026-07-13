@@ -26,11 +26,7 @@ h1 {
           font-size: max(5vw, 50px);
 }
 
-#mainContainer {
-          height: 100lvh;
-          display: flex;
-          flex-direction: column;
-}
+
 
 #btnContainer {
           width: 100%;
