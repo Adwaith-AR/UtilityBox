@@ -270,7 +270,8 @@ button {
 
 @media screen and (max-width:767px) {
 
-          body {height: 100dvh;
+          body {
+                    height: 100dvh;
                     width: 100dvw;
                     overflow: hidden;
                     display: block;
@@ -302,4 +303,7 @@ button {
           #inContainer {
                     gap: 0px;
           }
+                    #displayContainer>div {
+                              margin-top: 20px;
+                    }
 }
