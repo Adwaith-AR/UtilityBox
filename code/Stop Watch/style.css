@@ -9,23 +9,26 @@ body {
 }
 
 h1 {
-          font-size: 6em;
+          font-size: max(5vw, 50px);
           margin-bottom: 0px;
           opacity: 0.6;
 }
 
 #output {
-          margin-top: 0p;
+          margin-top: 0px;
           margin-bottom: 0px;
-          font-size: 12em;
+          font-size: 17vw;
 }
 
 #format {
           opacity: 0.6;
           margin-top: 0px;
-          font-size: 4em;
+          font-size: max(5vw, 50px);
 }
-
+#mainContainer{
+          height: calc(100vh,100dvh);
+          background: red;
+}
 #btnContainer {
           width: 100%;
           display: flex;
@@ -37,8 +40,9 @@ h1 {
 button {
           font-family: "Nunito", sans-serif;
           color: white;
-          font-size: 5em;
-          height: 140px;
+          font-size: max(5vw, 50px);
+          min-height: 10px;
+          max-height: 140px;
           width: 400px;
           border-radius: 100px;
           border: none;
