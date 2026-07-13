@@ -126,8 +126,3 @@ button:nth-child(3) {
 
 }
 
-@media screen and (max-width:767px) {
-          #mainContainer {
-                    gap: 13.5%;
-          }
-}
