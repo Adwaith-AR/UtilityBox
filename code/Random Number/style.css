@@ -29,7 +29,7 @@ body {
           background: #0b0e19;
           display: grid;
 
-          height: 100vh;
+          height: calc(100vh, 100dvh);
           grid-template-columns: auto 1fr;
           margin: 0px;
 }
