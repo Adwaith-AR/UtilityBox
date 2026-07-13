@@ -267,6 +267,9 @@ button {
           pointer-events: none;
           filter: blur(10px);
 }
+.show{
+          display: block;
+}
 
 @media screen and (max-width:767px) {
 
@@ -295,6 +298,7 @@ button {
           }
 
           #historyContainer {
+                    display: none;
                     padding: 10px;
                     overflow: hidden;
                     font-family: "Nunito", sans-serif;
