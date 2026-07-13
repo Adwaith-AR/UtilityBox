@@ -29,7 +29,7 @@ body {
           background: #0b0e19;
           display: grid;
 
-          height: calc(100vh, 100dvh);
+          height: 100vh;
           grid-template-columns: auto 1fr;
           margin: 0px;
 }
@@ -270,7 +270,7 @@ button {
 
 @media screen and (max-width:767px) {
 
-          body {
+          body {height: 100dvh;
                     display: block;
                     place-items: center;
           }
