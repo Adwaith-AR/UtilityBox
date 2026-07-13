@@ -93,8 +93,9 @@ button {
 }
 
 #dataContainer {
+
           font-family: "Nunito", sans-serif;
-          width: min(528px, 55vw);
+          width: 528px;
           color: white;
           padding: 40px;
           padding-top: 20px;
@@ -267,8 +268,9 @@ button {
           pointer-events: none;
           filter: blur(10px);
 }
-.show{
-          display: block;
+
+.show {
+          display: block !important;
 }
 
 @media screen and (max-width:767px) {
@@ -286,14 +288,12 @@ button {
                     padding-left: 10px;
           }
 
-          #inContainer {
-                    flex-direction: row;
-          }
+
 
           #dataContainer {
-                    height: 100%;
+                    width: 75vw;
+                    height: 50vh;
                     margin: 10px;
-                    padding: 15px;
                     padding-top: 10px;
           }
 
@@ -307,7 +307,8 @@ button {
           #inContainer {
                     gap: 0px;
           }
-                    #displayContainer>div {
-                              margin-top: 20px;
-                    }
+
+          #displayContainer>div {
+                    margin-top: 20px;
+          }
 }
