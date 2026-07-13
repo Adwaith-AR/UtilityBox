@@ -74,7 +74,7 @@ button {
           background: #5157f3;
           border: none;
           color: white;
-          font-size: 40px;
+          font-size: min(6vw, 40px);
           border-radius: 15px;
 
 }
@@ -94,19 +94,19 @@ button {
 
 #dataContainer {
           font-family: "Nunito", sans-serif;
-
+          width: min(528px, 55vw);
           color: white;
           padding: 40px;
           padding-top: 20px;
 }
 
 #dataContainer label {
-          font-size: 20px;
-
+          font-size: min(3vw, 20px);
+          margin: 0px;
 }
 
 #dataContainer>div:first-child>label {
-          font-size: 30px;
+          font-size: min(3vw, 30px);
           margin: 0px;
 
 }
@@ -199,6 +199,7 @@ button {
 }
 
 #historyContainer {
+          width: min(528px, 30vw);
           height: 400px;
           padding: 40px;
           padding-top: 20px;
@@ -280,10 +281,23 @@ button {
           }
 
           #inContainer {
-                    display: flex;
                     flex-direction: row;
-                    align-items: center;
-                    gap: 20px;
-                    justify-content: center;
+          }
+
+          #dataContainer {
+                    height: 100%;
+                    margin: 10px;
+                    padding: 15px;
+                    padding-top: 10px;
+          }
+
+          #historyContainer {
+                    padding: 10px;
+                    overflow: hidden;
+                    font-family: "Nunito", sans-serif;
+          }
+
+          #inContainer {
+                    gap: 0px;
           }
 }
