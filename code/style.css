@@ -82,7 +82,7 @@ main>p {
 .tools img {
           border-radius: 10px;
           width: auto;
-          height: min(2000px,12vh);
+          height: min(200px,10vh);
 }
 
 .tools h4 {
