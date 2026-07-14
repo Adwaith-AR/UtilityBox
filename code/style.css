@@ -8,13 +8,13 @@ body {
 
 main {
           height: auto;
-          padding: 30px;
+          padding: 1vw;
 }
 
 main>h1 {
           font-family: "Roboto", sans-serif;
           text-align: center;
-          font-size: 6em;
+          font-size: min(15vw,6em);
           margin-bottom: 30px;
 }
 
@@ -61,7 +61,7 @@ main>p {
           width: auto;
           display: flex;
           flex-wrap: wrap;
-          padding: 40px;
+          padding: min(2vw);
           gap: 20px;
           margin-top: 150px;
 }
@@ -82,13 +82,13 @@ main>p {
 .tools img {
           border-radius: 10px;
           width: auto;
-          height: 200px;
+          height: min(2000px,12vh);
 }
 
 .tools h4 {
           color: wheat;
           text-align: center;
-          font-size: 1em;
+          font-size:3vw;
 }
 
 a{
@@ -100,4 +100,9 @@ a:visited {
 }
 a:active {
           text-decoration: none;
+}
+@media screen and (max-width:767px) {
+
+
+
 }
