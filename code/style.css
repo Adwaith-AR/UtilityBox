@@ -82,13 +82,13 @@ main>p {
 .tools img {
           border-radius: 10px;
           width: auto;
-          height: min(200px,10vh);
+          height: min(200px,10vw);
 }
 
 .tools h4 {
           color: wheat;
           text-align: center;
-          font-size:3vw;
+          font-size: 1em;
 }
 
 a{
@@ -103,6 +103,9 @@ a:active {
 }
 @media screen and (max-width:767px) {
 
-
+.tools {
+                   display: flex;
+                   gap: 20px;
+          }
 
 }
