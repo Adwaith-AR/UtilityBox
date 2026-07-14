@@ -72,7 +72,6 @@ main>p {
           border-radius: 15px;
           padding: 15px;
           display: grid;
-          grid-columns: 1fr;
           justify-content: center;
           width: auto;
           background: #121826;
@@ -106,6 +105,8 @@ a:active {
 .tools {
                    display: flex;
                    gap: 20px;
+                   align-items: center;
+                   justify-content: center;
           }
 
 }
