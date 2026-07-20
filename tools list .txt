@@ -1,3 +1,14 @@
 calculator
 password genarator
 dice roller
+stop watch
+coin fliper
+Image compressor/resizer — canvas API, all client-side, no upload needed
+Markdown previewer — textarea on one side, rendered HTML on the other (marked.js)
+Currency converter — needs one free API (like exchangerate-api) but otherwise simple
+Tip calculator — bill amount + %, split by people
+Text case converter — UPPER/lower/Title Case/camelCase toggle buttons
+Color picker / hex-to-rgb converter — <input type="color"> does most of the work
+QR code generator — one small JS library (qrcode.js), just takes text/URL input
+Word/character counter — great for students, textarea + .length
+Unit converter — length, weight, temperature (just math + dropdowns)
