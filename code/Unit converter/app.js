@@ -6,7 +6,7 @@ const outputContainer = document.getElementById("OutputContainer")
 const convertBtn = document.getElementById("ConvertBtn")
 const distanceList = ["Cm", "m", "Km", "mi", "mm", "nm"]
 const tempratureList = ["K", "C", "F"]
-const storageList = ["MB", "KB", "GB", "TB"]
+const storageList = ["MB", "KB", "GB", "TB", "B", "b"]
 const areaList = [""]
 const VolumeList = [""]
 
@@ -28,7 +28,7 @@ function converter(unit1, unit2) {
           else if (unit1 == "Cm" && unit2 == "mm") {
                     outputValue.value = inputValue.value * 10
           }
-          else if (unit1 == "Cm" && unit2 == "nn") {
+          else if (unit1 == "Cm" && unit2 == "nm") {
                     outputValue.value = inputValue.value * 10000000
           }
           else if (unit1 == "m" && unit2 == "Km") {
@@ -113,6 +113,70 @@ function converter(unit1, unit2) {
           else if (unit1 == "K" && unit2 == "F") {
                     outputValue.value = (inputValue.value - 273.15) * 9 / 5 + 32
           }
+          else if (unit1 == "C" && unit2 == "K") {
+                    outputValue.value = inputValue.value + 273.15;
+          }
+          else if (unit1 == "C" && unit2 == "F") {
+                    outputValue.value = (inputValue.value * 9 / 5) + 32;
+          }
+          else if (unit1 == "F" && unit2 == "K") {
+                    outputValue.value = (inputValue.value - 32) * 5 / 9 + 273.15;
+          }
+          else if (unit1 == "F" && unit2 == "C") {
+                    outputValue.value = (inputValue.value - 32) * 5 / 9;
+          }
+          // ["MB", "KB", "GB", "TB", "B", "b"]
+          else if (unit1 == "b" && unit2 == "B") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "b" && unit2 == "MB") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "b" && unit2 == "GB") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "b" && unit2 == "TB") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "B" && unit2 == "b") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "B" && unit2 == "MB") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "B" && unit2 == "GB") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "B" && unit2 == "TB") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "MB" && unit2 == "b") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "MB" && unit2 == "B") {
+                    outputValue.value = inputValue.value;
+          }
+          else if (unit1 == "MB" && unit2 == "GB") {
+                    outputValue.value = inputValue.value
+          }
+          else if (unit1 == "MB" && unit2 == "TB") {
+                    outputValue.value = inputValue.value
+          }
+          else if (unit1 = "GB" && unit2 == "b") {
+                    outputValue.value = inputValue.value
+          }
+          else if (unit1 = "GB" && unit2 == "B") {
+                    outputValue.value = inputValue.value
+          }
+          else if (unit1 = "GB" &&unit2=="MB"){
+                    outputValue.value ==inputValue.value
+          }
+          else if (unit1=="GB"&&unit2=="TB"){
+                    outputValue.value=inputValue.value
+          }
+          
+
+
 }
 
 function unit(type) {
