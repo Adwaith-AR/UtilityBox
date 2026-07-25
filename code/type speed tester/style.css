@@ -1,0 +1,207 @@
+/* 
+  ============================================================
+  TYPING TEST  -  style.css
+  ------------------------------------------------------------
+  This file controls how the page LOOKS.
+
+  Theme: a Monkeytype style UI  -  solid colours only,
+  monospace font, dark by default with a light option.
+
+  Tip for juniors: we define our colours ONCE as variables,
+  then reuse them everywhere. We keep TWO sets of colours -
+  one for dark mode, one for light mode - and JavaScript just
+  swaps the data-theme on the <body> to switch between them.
+  ============================================================
+*/
+
+/* ---------- DARK theme colours (the default) ---------- */
+
+[data-theme="dark"] {
+          --bg: #111420;
+          /* page background - dark navy   */
+          --sub: #4a5266;
+          /* untyped text    - muted grey  */
+          --text: #d1d0c5;
+          /* typed correct   - soft white  */
+          --accent: #4ecdc4;
+          /* highlight       - teal        */
+          --error: #ca4754;
+          /* wrong letters   - red         */
+          --caret: #4ecdc4;
+          /* the typing cursor - teal      */
+}
+
+/* ---------- LIGHT theme colours ---------- */
+[data-theme="light"] {
+          --bg: #eaeaea;
+          /* page background - light grey  */
+          --sub: #a0a3ad;
+          /* untyped text    - grey        */
+          --text: #2c2e34;
+          /* typed correct   - near black  */
+          --accent: #0e9488;
+          /* highlight       - deep teal   */
+          --error: #d64550;
+          /* wrong letters   - red         */
+          --caret: #0e9488;
+          /* the typing cursor - teal      */
+}
+
+/* Universal selector (*) = every element. A clean reset. */
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          /* padding counts INSIDE the width */
+}
+
+/* The whole page */
+body {
+          background-color: var(--bg);
+          color: var(--sub);
+
+          /* A monospace font gives each letter equal width - key for */
+          /* a typing test, so nothing jumps around as you type.      */
+          font-family: 'Roboto Mono', 'Courier New', monospace;
+
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+
+          /* transition = smoothly fade colours when the theme changes */
+          transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ---------- Top bar (logo + theme button) ---------- */
+.topbar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          /* logo left, button right */
+          padding: 20px 32px;
+}
+
+.logo {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 20px;
+          font-weight: 700;
+}
+
+.logo-mark {
+          color: var(--accent);
+}
+
+/* the ">_" in teal   */
+.logo-text {
+          color: var(--text);
+}
+
+/* the name in white  */
+
+/* The theme toggle button */
+.theme-toggle {
+          background: none;
+          border: none;
+          color: var(--sub);
+          font-family: inherit;
+          font-size: 14px;
+          cursor: pointer;
+          transition: color 0.15s ease;
+}
+
+.theme-toggle:hover {
+          color: var(--accent);
+}
+
+/* ---------- Main content, centered on the page ---------- */
+.app {
+          flex: 1;
+          /* grow to fill the leftover height */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 32px;
+          padding: 24px;
+          max-width: 1100px;
+          margin: 0 auto;
+          width: 100%;
+}
+
+/* ---------- The stats line ---------- */
+.stats {
+          display: flex;
+          gap: 28px;
+          font-size: 16px;
+          color: var(--sub);
+}
+
+/* The numbers themselves stand out in the accent colour */
+.stats b {
+          color: var(--accent);
+          font-weight: 700;
+}
+
+/* ---------- The words to type ---------- */
+.quote {
+          font-size: 28px;
+          line-height: 1.9;
+          letter-spacing: 1px;
+          text-align: left;
+          user-select: none;
+          /* stop the text being selectable */
+}
+
+/* These classes are added by JavaScript, one letter at a time. */
+.quote .correct {
+          color: var(--text);
+}
+
+/* right */
+.quote .wrong {
+          color: var(--error);
+}
+
+/* wrong */
+
+/* The letter you're ON gets a blinking caret bar on its left. */
+.quote .current {
+          border-left: 2px solid var(--caret);
+          animation: blink 1s step-end infinite;
+}
+
+/* @keyframes = defines an animation. Here: fade in and out. */
+@keyframes blink {
+          50% {
+                    border-color: transparent;
+          }
+}
+
+/* ---------- The hidden input ---------- */
+/* We move it far off-screen instead of display:none, because a */
+/* truly hidden input can't be focused on some phones.          */
+.hidden-input {
+          position: absolute;
+          left: -9999px;
+          opacity: 0;
+}
+
+/* ---------- The restart button ---------- */
+.button {
+          background: none;
+          border: none;
+          color: var(--sub);
+          font-family: inherit;
+          font-size: 15px;
+          padding: 8px 20px;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.button:hover {
+          color: var(--bg);
+          background-color: var(--accent);
+}

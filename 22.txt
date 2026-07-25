@@ -1,0 +1,10 @@
+./eat.sh ./sector_B/devil_fruit_1.txt &&
+./eat.sh ./sector_B/devil_fruit_2.txt &&
+./eat.sh ./sector_B/devil_fruit_3.txt &&
+./eat.sh ./sector_B/devil_fruit_4.txt &&
+./eat.sh ./sector_B/devil_fruit_5.txt &&
+./eat.sh ./sector_B/devil_fruit_6.txt &&
+./eat.sh ./sector_B/devil_fruit_7.txt &&
+./eat.sh ./sector_B/devil_fruit_8.txt &&
+./eat.sh ./sector_B/devil_fruit_9.txt &&
+./eat.sh ./sector_B/devil_fruit_10.txt 

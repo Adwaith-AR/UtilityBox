@@ -2,10 +2,9 @@ const input = document.getElementById("textarea");
 const output = document.getElementById("output");
 
 function render() {
-          window.console.log(marked.parse(input.value))
-          output.innerHTML = marked.parse(input.value);
-
-          window.alert("j")
+          output.innerHTML = DOMPurify.sanitize(marked.parse(input.value));
+          window.console.log(DOMPurify.sanitize(marked.parse(input.value)))
 }
+
 input.addEventListener('input', render);
 render();

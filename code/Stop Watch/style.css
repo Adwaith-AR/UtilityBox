@@ -67,14 +67,16 @@ button:nth-child(3) {
 
 #lapsContainer {
           overflow: hidden;
-          width: min(95vw,1550px);
+          width: min(95vw, 1550px);
           height: min-content;
-          background: #151e27;
           margin-top: 30px;
+          margin-bottom: 30px;
           justify-self: center;
           border-radius: 20px;
-          border: 1px solid #91949a67;
           display: grid;
+          background: #0b0e19;
+          box-shadow: inset 14px 14px 16px #04060a,
+                    inset -14px -14px 16px #121628;
 }
 
 #lapsContainerHeader>p {
@@ -121,4 +123,3 @@ button:nth-child(3) {
           border-radius: 10px;
 
 }
-

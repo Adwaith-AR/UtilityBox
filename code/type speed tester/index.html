@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Typing Test</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    
+
+    <body data-theme="light">
+
+        <!-- header: the top bar with the logo and the theme button -->
+        <header class="topbar">
+
+            <!-- The little logo on the left -->
+            <div class="logo">
+                <span class="logo-mark">&gt;_</span>
+                <span class="logo-text">typetest</span>
+            </div>
+
+            <!-- button: click to switch between dark and light themes -->
+            <button id="theme-toggle" class="theme-toggle">Light</button>
+
+        </header>
+
+        <!-- main: the primary content of the page -->
+        <main class="app">
+
+            <!-- The three live stats: speed, accuracy and time. -->
+            <!-- They sit quietly above the words, like on Monkeytype. -->
+            <section class="stats">
+                <span class="stat"><b id="wpm">0</b> wpm</span>
+                <span class="stat"><b id="accuracy">100</b>% acc</span>
+                <span class="stat"><b id="timer">0</b>s</span>
+            </section>
+
+            <!-- The words to type are printed here.                          -->
+            <!-- JS fills this with one <span> per character so we can colour  -->
+            <!-- each letter and draw a caret on the current one.             -->
+            <div class="quote" id="quote">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            </div>
+
+            <!-- A hidden text box that actually catches the typing.          -->
+            <!-- We don't show it; clicking anywhere focuses it instead, so   -->
+            <!-- the design stays clean like a real typing app.               -->
+            <input id="input" class="hidden-input" autocomplete="off" autocapitalize="off" spellcheck="false" />
+
+            <!-- button: load a fresh set of words and start over -->
+            <button id="restart" class="button">restart</button>
+
+        </main>
+
+        <!-- script: loaded LAST so all the HTML above already exists -->
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

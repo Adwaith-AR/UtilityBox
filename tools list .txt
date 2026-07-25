@@ -3,8 +3,8 @@ password genarator
 dice roller
 stop watch
 coin fliper
+Markdown previewer
 Image compressor/resizer — canvas API, all client-side, no upload needed
-Markdown previewer — textarea on one side, rendered HTML on the other (marked.js)
 Currency converter — needs one free API (like exchangerate-api) but otherwise simple
 Tip calculator — bill amount + %, split by people
 Text case converter — UPPER/lower/Title Case/camelCase toggle buttons

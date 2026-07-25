@@ -2,7 +2,7 @@
 
 body {
           font-family: "Nunito", sans-serif;
-          background: #050e28;
+          background: #060b1a;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -21,24 +21,29 @@ button {
           border: 1px solid #1b243d;
           padding: 20px;
           text-align: center;
-          background: #0b142c;
+          background: #0b0e19;
 
 }
-h4{
+
+h4 {
           text-align: left;
           color: white;
 }
-#outputContainer {transition: 200ms;
-          background: #182137;
-          border: 1px solid #283048;
+
+#outputContainer {
+          transition: 200ms;
           height: 15%;
           border-radius: 15px;
           display: flex;
           align-items: center;
           justify-content: center;
+          background: #0b0e19;
+                    box-shadow: inset 14px 14px 16px #04060a,
+                              inset -14px -14px 16px #121628;
 }
 
-#passwordOutput {transition: 200ms;
+#passwordOutput {
+          transition: 200ms;
           color: white;
           font-size: 35px;
 }
@@ -98,6 +103,7 @@ h4{
 }
 
 #inputContainer>button {
+
           height: 73%;
           width: 87%;
           font-family: "Nunito", sans-serif;
@@ -106,6 +112,13 @@ h4{
           background: #182137;
           align-self: center;
           color: white;
+          background: #0b0e19;
+          box-shadow: inset 14px 14px 16px #04060a,
+                    inset -14px -14px 16px #121628;
+}
+#inputContainer>button:hover{
+          scale: 1.03;
+
 }
 
 #generatorBtn {
@@ -119,7 +132,7 @@ h4{
           background: #5157f3;
           color: white;
           font-weight: 600;
-          font-size:2rem;
+          font-size: 2rem;
           transition: 100ms;
 }
 
@@ -133,7 +146,9 @@ h4{
 }
 
 .activeBtn {
-          background: #5157f3 !important;
+          background: #0b0e19 !important;
+          box-shadow: 14px 14px 16px #04060a,
+                    -14px -14px 16px #121628 !important;
 }
 
 .alertBox {
