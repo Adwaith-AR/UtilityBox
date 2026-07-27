@@ -111,8 +111,7 @@ a:active {
           .tools {
                     padding-bottom: 5px;
                     height: auto;
-                    display: grid;
-                    place-items: center;
+                    display: flex;
                     gap: 10px;
           }
 
