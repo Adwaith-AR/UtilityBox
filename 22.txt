@@ -1,10 +1,19 @@
-./eat.sh ./sector_B/devil_fruit_1.txt &&
-./eat.sh ./sector_B/devil_fruit_2.txt &&
-./eat.sh ./sector_B/devil_fruit_3.txt &&
-./eat.sh ./sector_B/devil_fruit_4.txt &&
-./eat.sh ./sector_B/devil_fruit_5.txt &&
-./eat.sh ./sector_B/devil_fruit_6.txt &&
-./eat.sh ./sector_B/devil_fruit_7.txt &&
-./eat.sh ./sector_B/devil_fruit_8.txt &&
-./eat.sh ./sector_B/devil_fruit_9.txt &&
-./eat.sh ./sector_B/devil_fruit_10.txt 
+plz read it completely
+I was writing this note based on the previous experience of submissions of other projects
+
+okay
+1
+Don't reject my project saying that it is AI. Look at the code correctly; it only looks like it was created by ai is bcs ai give me the ui design referance img note the word refence img like ai gived me an image of how the layout should look 
+and also the burger imgs are also created my ai 
+no vibe coding
+not asking AI to write that code or this code 
+If I used AI in coding, it was only in JS, and it was for learning because I was new to JS when I was starting the project; I swear that it was also below 2% AI use; the remaining 95% of code is written by me
+2
+Don't reject my project saying it is inflated by time
+eg(you used hacktime and lapes and log time at the same project)
+I have an explanation for that 
+Coding is recorded in HackTime 
+Lapes recodes the burger img generation and the editing of the img
+Log time was used because I lost some of the img creation footage from Lapes as it got some updates recently
+
+I hope you read this completely. If there is any other reason for rejecting plz specify that in the reply and say how I can solve it

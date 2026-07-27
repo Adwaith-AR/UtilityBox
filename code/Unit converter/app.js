@@ -4,11 +4,11 @@ const inputValue = document.getElementById("inUnit")
 const outputValue = document.getElementById("outUnit")
 const outputContainer = document.getElementById("OutputContainer")
 const convertBtn = document.getElementById("ConvertBtn")
-const distanceList = ["Cm", "m", "Km", "mi", "mm", "nm"]
+const distanceList = ["nm", "mm", "Cm", "m", "Km", "mi"]
 const tempratureList = ["K", "C", "F"]
-const storageList = ["MB", "KB", "GB", "TB", "B", "b"]
+const storageList = ["b", "B", "KB", "MB", "GB", "TB",]
 const areaList = [""]
-const VolumeList = [""]
+const VolumeList = ["cup", "gal", "mL", "L", "kL"]
 
 //Storage Area Volume Distance Temrature   //
 function converter(unit1, unit2) {
@@ -125,56 +125,128 @@ function converter(unit1, unit2) {
           else if (unit1 == "F" && unit2 == "C") {
                     outputValue.value = (inputValue.value - 32) * 5 / 9;
           }
-          // ["MB", "KB", "GB", "TB", "B", "b"]
           else if (unit1 == "b" && unit2 == "B") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value * 8;
           }
           else if (unit1 == "b" && unit2 == "MB") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value / 8000000;
           }
           else if (unit1 == "b" && unit2 == "GB") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value / 8000000000;
           }
           else if (unit1 == "b" && unit2 == "TB") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value / 8000000000000;
           }
           else if (unit1 == "B" && unit2 == "b") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value * 8;
           }
           else if (unit1 == "B" && unit2 == "MB") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value / 1000000;
           }
           else if (unit1 == "B" && unit2 == "GB") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value / 1000000000;
           }
           else if (unit1 == "B" && unit2 == "TB") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value / 1000000000000;
           }
           else if (unit1 == "MB" && unit2 == "b") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value * 8000000;
           }
           else if (unit1 == "MB" && unit2 == "B") {
-                    outputValue.value = inputValue.value;
+                    outputValue.value = inputValue.value * 1000000;
           }
           else if (unit1 == "MB" && unit2 == "GB") {
-                    outputValue.value = inputValue.value
+                    outputValue.value = inputValue.value / 1000;
           }
           else if (unit1 == "MB" && unit2 == "TB") {
-                    outputValue.value = inputValue.value
+                    outputValue.value = inputValue.value / 1000000;
           }
-          else if (unit1 = "GB" && unit2 == "b") {
-                    outputValue.value = inputValue.value
+          else if (unit1 == "GB" && unit2 == "b") {
+                    outputValue.value = inputValue.value * 8000000000
           }
-          else if (unit1 = "GB" && unit2 == "B") {
-                    outputValue.value = inputValue.value
+          else if (unit1 == "GB" && unit2 == "B") {
+                    outputValue.value = inputValue.value * 1000000000;
           }
-          else if (unit1 = "GB" &&unit2=="MB"){
-                    outputValue.value ==inputValue.value
+          else if (unit1 == "GB" && unit2 == "MB") {
+                    outputValue.value = inputValue.value * 1000;
           }
-          else if (unit1=="GB"&&unit2=="TB"){
-                    outputValue.value=inputValue.value
+          else if (unit1 == "GB" && unit2 == "TB") {
+                    outputValue.value = inputValue.value / 1000;
           }
-          
+          else if (unit1 == "TB" && unit2 == "b") {
+                    outputValue.value = inputValue.value * 8000000000000;
+          }
+          else if (unit1 == "TB" && unit2 == "B") {
+                    outputValue.value = inputValue.value * 1000000000000;
+          }
+          else if (unit1 == "TB" && unit2 == "MB") {
+                    outputValue.value = inputValue.value * 1000000;
+          }
+          else if (unit1 == "TB" && unit2 == "GB") {
+                    outputValue.value = inputValue.value * 1000;
+          }
+          else if (unit1 == "cup" && unit2 == "gal") {
+                    outputValue.value = inputValue.value / 16
+          }
+          else if (unit1 == "cup" && unit2 == "mL") {
+                    outputValue.value = inputValue.value * 236.5882365
+          }
+          else if (unit1 == "cup" && unit2 == "L") {
+                    outputValue.value = inputValue.value * 0.2365882365
+          }
+          else if (unit1 == "cup" && unit2 == "kL") {
+                    outputValue.value = inputValue.value * 0.0002365882365
+          }
+          else if (unit1 == "gal" && unit2 == "cup") {
+                    outputValue.value = inputValue.value * 16
+          }
+          else if (unit1 == "gal" && unit2 == "mL") {
+                    outputValue.value = inputValue.value * 3785.411784
+          }
+          else if (unit1 == "gal" && unit2 == "L") {
+                    outputValue.value = inputValue.value * 3.785411784
+          }
+          else if (unit1 == "gal" && unit2 == "kL") {
+                    outputValue.value = inputValue.value * 0.003785411784
+          }
+          else if (unit1 == "mL" && unit2 == "cup") {
+                    outputValue.value = inputValue.value / 236.5882365
+          }
+          else if (unit1 == "mL" && unit2 == "gal") {
+                    outputValue.value = inputValue.value / 3785.411784
+          }
+          else if (unit1 == "mL" && unit2 == "L") {
+                    outputValue.value = inputValue.value / 1000
+          }
+          else if (unit1 == "mL" && unit2 == "kL") {
+                    outputValue.value = inputValue.value / 1000000
+          }
+          else if (unit1 == "L" && unit2 == "cup") {
+                    outputValue.value = inputValue.value / 0.2365882365
+          }
+          else if (unit1 == "L" && unit2 == "gal") {
+                    outputValue.value = inputValue.valueliters / 3.785411784
+          }
+          else if (unit1 == "L" && unit2 == "mL") {
+                    outputValue.value = inputValue.value * 1000
+          }
+          else if (unit1 == "L" && unit2 == "kL") {
+                    outputValue.value = inputValue.value / 1000
+          }
+          else if (unit1 == "kL" && unit2 == "cup") {
+                    outputValue.value = inputValue.value / 0.0002365882365
+          }
+          else if (unit1 == "kL" && unit == "gal") {
+                    outputValue.value = inputValue.value / 0.003785411784
+          }
+          else if (unit1 == "kL" && unit2 == "mL") {
+                    outputValue.value = inputValue.value * 1000000
+          }
+          else if (unit1 == "kL" && unit2 == "L") {
+                    outputValue.value = inputValue.value * 1000
+          }
+
+
 
 
 }

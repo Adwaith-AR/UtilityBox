@@ -81,14 +81,6 @@ option {
           width: anchor-size(width);
 }
 
-h6 {
-          height: fit-content;
-          text-align: center;
-          padding: 10px;
-          margin: 0px;
-          font-size: 2em;
-
-}
 
 .Unit {
           z-index: 1;
@@ -187,7 +179,20 @@ input {
 
 
 
+@media screen and (max-width:767px) {
 
+          #mainContainer {
+                    width: 90vw;
+                    height: 80vh;
+                    padding: 10px;
+                   
+          }
+h6 {
+         
+          font-size: 5vw;
+
+}
+}
 
 
 
