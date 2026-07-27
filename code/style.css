@@ -14,7 +14,7 @@ main {
 main>h1 {
           font-family: "Roboto", sans-serif;
           text-align: center;
-          font-size: min(15vw,6em);
+          font-size: min(15vw, 6em);
           margin-bottom: 30px;
 }
 
@@ -33,8 +33,8 @@ main>p {
           display: flex;
           justify-content: space-between;
           background: #0b0e19;
-                    box-shadow: inset 14px 14px 16px #04060a,
-                              inset -14px -14px 16px #121628;
+          box-shadow: inset 14px 14px 16px #04060a,
+                    inset -14px -14px 16px #121628;
 }
 
 #searchBox {
@@ -77,14 +77,14 @@ main>p {
           width: auto;
           height: auto;
           background: #0b0e19;
-                    box-shadow: 14px 14px 16px #04060a,
-                              -14px -14px 16px #121628;
+          box-shadow: 14px 14px 16px #04060a,
+                    -14px -14px 16px #121628;
 }
 
 .tools img {
           border-radius: 10px;
           width: auto;
-          height: min(200px,10vw);
+          height: min(200px, 10vw);
 }
 
 .tools h4 {
@@ -93,23 +93,35 @@ main>p {
           font-size: 1em;
 }
 
-a{
+a {
           text-decoration: none;
           color: white;
 }
+
 a:visited {
           text-decoration: none;
 }
+
 a:active {
           text-decoration: none;
 }
+
 @media screen and (max-width:767px) {
 
-.tools {
-                   display: flex;
-                   gap: 10px;
-                   align-items: center;
-                   justify-content: center;
+          .tools {
+                    display: flex;
+                    flex-grow: inherit;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: center;
           }
 
+          #tools_container {
+                    width: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: min(2vw);
+                    gap: 20px;
+                    margin-top: 150px;
+          }
 }
