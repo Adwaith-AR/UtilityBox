@@ -197,6 +197,15 @@ input {
           #mainContainer>div>h2 {
                     font-size: 5vw;
           }
+
+          select {
+                    font-size:7vw;
+
+          }
+          #ConvertBtn{
+                    padding: 20px;
+                    width: auto;
+          }
 }
 
 
