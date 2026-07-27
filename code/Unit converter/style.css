@@ -3,9 +3,9 @@
 body {
           margin: 0px;
           padding: 0px;
-          width: 100%;
+          width: 100dvw;
           font-family: "Roboto", sans-serif;
-          height: 100vh;
+          height: 100dvh;
           background: #0b0f19;
           display: flex;
           align-items: center;
@@ -182,16 +182,21 @@ input {
 @media screen and (max-width:767px) {
 
           #mainContainer {
-                    width: 90vw;
-                    height: 80vh;
+                    width: 85vw;
+                    height: auto;
                     padding: 10px;
-                   
-          }
-h6 {
-         
-          font-size: 5vw;
 
-}
+          }
+
+          h1 {
+
+                    font-size: 8vw;
+
+          }
+
+          #mainContainer>div>h2 {
+                    font-size: 5vw;
+          }
 }
 
 
