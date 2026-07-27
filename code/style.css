@@ -109,6 +109,8 @@ a:active {
 @media screen and (max-width:767px) {
 
           .tools {
+                    padding-bottom: 5px;
+                    height: auto;
                     display: grid;
                     place-items: center;
                     gap: 10px;
@@ -117,6 +119,7 @@ a:active {
           #tools_container {
                     width: auto;
                     display: flex;
+                    justify-content: center;
                     flex-wrap: wrap;
                     padding: min(2vw);
                     gap: 20px;
