@@ -293,6 +293,19 @@ function unit(type) {
                     inputContainer.value = "MB"
                     outputContainer.value = "KB"
           }
+          else if (type == "Volume") {
+                    window.console.log("enter 1")
+                    for (let i = 0; i < VolumeList.length; i++) {
+                              window.console.log("enter 2")
+                              values.push(`<option value="${VolumeList[i]}">${storageList[i]}</option>`)
+                              window.console.log(values)
+                    }
+                    window.console.log("enter 3")
+                    inputContainer.innerHTML = values.join("")
+                    outputContainer.innerHTML = values.join("")
+                    inputContainer.value = "cup"
+                    outputContainer.value = "gal"
+          }
 }
 
 
