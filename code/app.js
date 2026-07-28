@@ -1,7 +1,17 @@
-const calculator = document.getElementById("calculator")
-const password = document.getElementById("calculator")
+const themeBtn = document.getElementById("theme")
 
-const tools = ["calculator", "Password Generator", "Stop Watch", "Random Number", "Markdown previewer","Unit converter"]
+const tools = ["calculator", "Password Generator", "Stop Watch", "Random Number", "Markdown previewer", "Unit converter"]
+if (localStorage.getItem("theme") == "null") {
+          localStorage.setItem("theme", "light")
+}
+else if (localStorage.getItem("theme") == "dark"){
+          document.body.setAttribute("data-theme", "dark")
+          themeBtn.innerHTML = `<img id="themeIcon" src="./img/moon.png" alt="">`
+}
+else {
+          document.body.setAttribute("data-theme", "light")
+          themeBtn.innerHTML = `<img id="themeIcon" src="./img/sun.png" alt="">`
+}
 
 function ItemCardBuilder(tools) {
           const container = document.getElementById("tools_container")
@@ -13,17 +23,34 @@ function ItemCardBuilder(tools) {
           container.innerHTML = itemsCreated.join("")
 }
 
+
+themeBtn.addEventListener("click", function () {
+          let curentTheme = document.body.getAttribute("data-theme");
+          if(curentTheme=="dark"){
+                    document.body.setAttribute("data-theme","light")
+                    localStorage.setItem("theme", "light")
+                    themeBtn.innerHTML =`<img id="themeIcon" src="./img/sun.png" alt="">`
+          }
+          else {
+                    localStorage.setItem("theme", "dark")
+                    document.body.setAttribute("data-theme", "dark")
+                    themeBtn.innerHTML = `<img id="themeIcon" src="./img/moon.png" alt="">` 
+          }
+})
+
 ItemCardBuilder(tools)
 const fuseOptions = { keys: ['name'], threshold: 0.4 };
 const fuse = new Fuse(tools, fuseOptions);
 function search() {
           const value = document.getElementById("searchBox")
+          const searchResults = fuse.search(value.value);
+
 
           if (value.value == "") {
-                    return;
+                    ItemCardBuilder(tools)
+
           }
-          const searchResults = fuse.search(value.value);
-          if (searchResults.length > 0) {
+          else if (searchResults.length > 0) {
                     let bestMatch = []
 
                     for (let j = 0; j < searchResults.length; j++) {
@@ -31,10 +58,10 @@ function search() {
                     }
                     ItemCardBuilder(bestMatch)
                     value.value = "";
-                    
+
           } else {
                     ItemCardBuilder([])
-                    value.value ="";
+                    value.value = "";
           }
 };
 

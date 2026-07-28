@@ -1,16 +1,38 @@
+<!--
+  ============================================================
+  TYPING TEST  -  index.html
+  ------------------------------------------------------------
+  This is the STRUCTURE of the page (the skeleton).
+  HTML = "what things are". CSS = "how they look".
+  JS  = "what they do".
 
+  Design inspired by Monkeytype: monospace font, dark theme,
+  a teal accent, and words that flow across the screen.
+
+  Read the comments as you go. Each <tag> is labelled so you
+  can see WHY it was chosen.
+  ============================================================
+-->
 <!DOCTYPE html>
+<!-- lang tells the browser + screen readers this page is English -->
 <html lang="en">
 
     <head>
+        <!-- meta: information ABOUT the page (not shown on screen) -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- title: text shown on the browser tab -->
         <title>Typing Test</title>
+
+        <!-- link: pulls in our external stylesheet (the CSS file) -->
         <link rel="stylesheet" href="style.css" />
     </head>
-    
 
-    <body data-theme="light">
+    <!-- We store the current theme on the <body> using a data-* attribute. -->
+    <!-- JavaScript flips this between "dark" and "light".                  -->
+
+    <body data-theme="dark">
 
         <!-- header: the top bar with the logo and the theme button -->
         <header class="topbar">
@@ -40,9 +62,7 @@
             <!-- The words to type are printed here.                          -->
             <!-- JS fills this with one <span> per character so we can colour  -->
             <!-- each letter and draw a caret on the current one.             -->
-            <div class="quote" id="quote">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            </div>
+            <div class="quote" id="quote"> </div>
 
             <!-- A hidden text box that actually catches the typing.          -->
             <!-- We don't show it; clicking anywhere focuses it instead, so   -->
