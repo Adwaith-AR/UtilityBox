@@ -48,6 +48,7 @@ header>button>img {
           aspect-ratio: 1/1;
           box-shadow: 2px 2px 5px var(--darkShade),
                     -2px -2px 5px var(--lightShade);
+          transition: all 1s;
 
 }
 
@@ -75,7 +76,7 @@ main>p {
           overflow: hidden;
           justify-self: center;
           height: 50px;
-          display: flex;
+          display: flex;transition: all 1s;
           justify-content: space-between;
           background: var(--bg);
           box-shadow: inset 14px 14px 16px var(--darkShade),
@@ -95,7 +96,7 @@ main>p {
           margin-right: 20px;
           width: fit-content;
           height: 70%;
-          align-self: center;
+          align-self: center;transition: all 1s;
           background: var(--bg);
           border: none;
           color: var(--text);
@@ -116,7 +117,7 @@ main>p {
 
 .tools {
           border-radius: 15px;
-          padding: 15px;
+          padding: 15px;transition: all 1s;
           display: grid;
           justify-content: center;
           width: auto;
