@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+
+}
+
+
+
 @keyframes shake {
           0% {
                     transform: translateX(20px)
@@ -26,7 +44,7 @@
 
 body {
           font-family: "Nunito", sans-serif;
-          background: #0b0e19;
+          background: var(--bg);
           display: grid;
 
           height: 100vh;
@@ -40,9 +58,9 @@ button {
 
 .container {
           border-radius: 20px;
-          background: #0b0e19;
-                    box-shadow: 14px 14px 16px #04060a,
-                              -10px -10px 16px #121628;
+          background: var(--bg);
+                    box-shadow: 14px 14px 16px var(--darkShade),
+                              -10px -10px 16px var(--lightShade);
 }
 
 #displayContainer {
@@ -55,7 +73,7 @@ button {
 
 #displayContainer>label:nth-child(1) {
           font-family: "Nunito", sans-serif;
-          color: white;
+          color: var(--text);
           font-size: min(20vw, 12em);
 }
 
@@ -74,7 +92,7 @@ button {
           width: min(30vw, 300px);
           background: #5157f3;
           border: none;
-          color: white;
+          color: var(--text);
           font-size: min(6vw, 40px);
           border-radius: 15px;
 
@@ -99,12 +117,12 @@ button {
 
           font-family: "Nunito", sans-serif;
           width: 528px;
-          color: white;
+          color: var(--text);
           padding: 40px;
           padding-top: 20px;
-          background: #0b0e19;
-                    box-shadow: 14px 14px 16px #04060a,
-                              -10px -10px 16px #121628;
+          background: var(--bg);
+                    box-shadow: 14px 14px 16px var(--darkShade),
+                              -10px -10px 16px var(--lightShade);
 }
 
 #dataContainer label {
@@ -130,10 +148,10 @@ button {
           height: auto clamp(auto, 50px);
           margin-top: 5px;
           border-radius: 15px;
-          overflow: visible;
-          background: #0b0e19;
-          box-shadow: inset 14px 14px 16px #04060a,
-                    inset -14px -14px 16px #121628;
+          overflow: hidden;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
 
 }
 
@@ -149,7 +167,7 @@ button {
 }
 
 .inputNumber input {
-          color: white;
+          color: var(--text);
           text-align: center;
           font-size: 20px;
           width: 80%;
@@ -164,7 +182,7 @@ button {
 }
 
 .inputNumber button {
-          color: white;
+          color: var(--text);
           font-size: 30px;
           width: 10%;
           background: none;
@@ -178,7 +196,7 @@ button {
 
 .inputNumber button:hover {
 
-          background: #2e416b;
+          background: var(--lightShade);
 }
 
 
@@ -207,7 +225,7 @@ button {
           height: 50px;
           border-radius: 15px;
           border: none;
-          color: white;
+          color: var(--text);
           font-size: 20px;
 }
 
@@ -218,9 +236,9 @@ button {
           padding-top: 20px;
           padding-bottom: 0px;
           font-family: "Nunito", sans-serif;
-          background: #0b0e19;
-                    box-shadow: 14px 14px 16px #04060a,
-                              -10px -10px 16px #121628;
+          background: var(--bg);
+                    box-shadow: 14px 14px 16px var(--darkShade),
+                              -10px -10px 16px var(--lightShade);
 }
 
 #historyContainer>div:first-child {
@@ -232,13 +250,13 @@ button {
           margin-left: auto;
           border: none;
           background: none;
-          color: white;
+          color: var(--text);
           font-size: 20px;
           font-family: "Nunito", sans-serif;
 }
 
 #historyContainer>div:first-child p {
-          color: white;
+          color: var(--text);
           font-size: 20px;
 }
 
@@ -252,7 +270,7 @@ button {
 }
 
 .historyData {
-          color: white;
+          color: var(--text);
           border-radius: 15px;
           padding: 0px 20px;
           padding-right: 5px;
@@ -261,9 +279,9 @@ button {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          background: #0b0e19;
-          box-shadow: inset 14px 14px 16px #04060a,
-                    inset -14px -14px 16px #121628;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
 }
 
 .historyData button {
@@ -275,7 +293,7 @@ button {
 }
 
 .historyData button:hover {
-          background: #182135;
+          background: 182135;
 }
 
 .shake {

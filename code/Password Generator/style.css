@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+[data-theme="dark"] {
+          --mainBg:#060b1a;
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --mainBg: #ddd9d9;
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+}
+
 body {
           font-family: "Nunito", sans-serif;
-          background: #060b1a;
+          background: var(--mainBg);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -21,13 +38,13 @@ button {
           border: 1px solid #1b243d;
           padding: 20px;
           text-align: center;
-          background: #0b0e19;
+          background: var(--bg);
 
 }
 
 h4 {
           text-align: left;
-          color: white;
+          color:var(--text);
 }
 
 #outputContainer {
@@ -37,14 +54,14 @@ h4 {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #0b0e19;
-                    box-shadow: inset 14px 14px 16px #04060a,
-                              inset -14px -14px 16px #121628;
+          background: var(--bg);
+                    box-shadow: inset 14px 14px 16px var(--darkShade),
+                              inset -14px -14px 16px var(--lightShade);
 }
 
 #passwordOutput {
           transition: 200ms;
-          color: white;
+          color:var(--text);
           font-size: 35px;
 }
 
@@ -57,14 +74,14 @@ h4 {
 
 .sliderLable1 {
 
-          color: white;
+          color: var(--text);
           width: fit-content;
 }
 
 #passLength {
           width: 100%;
           appearance: none;
-          background: #18213b;
+          background:var(--bg);
           outline: none;
           height: 10px;
           border-radius: 5px;
@@ -109,12 +126,11 @@ h4 {
           font-family: "Nunito", sans-serif;
           border: none;
           border-radius: 10px;
-          background: #182137;
+          background: var(--bg);
           align-self: center;
-          color: white;
-          background: #0b0e19;
-          box-shadow: inset 14px 14px 16px #04060a,
-                    inset -14px -14px 16px #121628;
+          color: var(--text);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
 }
 #inputContainer>button:hover{
           scale: 1.03;
@@ -130,7 +146,7 @@ h4 {
           border-radius: 10px;
           border: none;
           background: #5157f3;
-          color: white;
+          color: var(--text);
           font-weight: 600;
           font-size: 2rem;
           transition: 100ms;
@@ -146,9 +162,9 @@ h4 {
 }
 
 .activeBtn {
-          background: #0b0e19 !important;
-          box-shadow: 14px 14px 16px #04060a,
-                    -14px -14px 16px #121628 !important;
+          background: var(--bg) !important;
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade) !important;
 }
 
 .alertBox {

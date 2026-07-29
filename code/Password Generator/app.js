@@ -17,6 +17,12 @@ let lowerCaseBtnState = false;
 let numberBtnState = false;
 let symbolsBtnState = false;
 
+if(localStorage.getItem("theme")=="dark"){
+          document.body.setAttribute("data-theme","dark")
+}
+else{
+          document.body.setAttribute("data-theme","light")
+}
 
 upperCaseBtn.onclick = function () {
           if (upperCaseBtnState) {

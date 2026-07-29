@@ -20,6 +20,13 @@ max.value = 100
 min.value = 1
 numberType.textContent = "Integers"
 numOfDigit.value = 2
+if (localStorage.getItem("theme") == "dark") {
+          document.body.setAttribute("data-theme", "dark")
+}
+else {
+          document.body.setAttribute("data-theme", "light")
+}
+
 
 function randomNumberGenerator() {
 

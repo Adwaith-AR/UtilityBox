@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+
+}
+
 Body {
-          background: #0b0e19;
+          color: var(--text);
+          background: var(--bg);
           width: 100vw;
           height: 100vh;
           margin: 0px;
@@ -14,7 +31,7 @@ pre {
           overflow: auto;
           font-size: 85%;
           line-height: 1.45;
-          background-color: black;
+          background-color: var(--lightShade);
           border-radius: 6px;
 }
 
@@ -40,9 +57,9 @@ pre {
           height: 8%;
           width: 97%;
           border-radius: 20px;
-          background: #0b0e19;
-          box-shadow: 14px 14px 16px #04060a,
-                    -14px -14px 16px #121628;
+          background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
 
 }
 
@@ -54,13 +71,13 @@ pre {
 
 #input,
 #outputContainer {
-          background: #0b0e19;
-          box-shadow: inset 14px 14px 16px #04060a,
-                    inset -14px -14px 16px #121628;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
           width: 97%;
           height: 93%;
           border-radius: 20px;
-          color: white;
+          color: var(--text);
           overflow: hidden;
           padding: 40px;
           box-sizing: border-box;
@@ -69,14 +86,14 @@ pre {
 .nav h1 {
           font-family: "Roboto", sans-serif;
           text-align: center;
-          color: white;
+          color: var(--text);
 }
 
 textarea {
           background: none;
           overflow: auto;
           overflow-x: auto;
-          color: white;
+          color: var(--text);
           outline: none;
           border: none;
           text-align: left;
