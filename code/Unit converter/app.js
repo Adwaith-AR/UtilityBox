@@ -6,10 +6,15 @@ const outputContainer = document.getElementById("OutputContainer")
 const convertBtn = document.getElementById("ConvertBtn")
 const distanceList = ["nm", "mm", "Cm", "m", "Km", "mi"]
 const tempratureList = ["K", "C", "F"]
-const storageList = ["b", "B", "KB", "MB", "GB", "TB",]
+const storageList = ["b", "B", "MB", "GB", "TB",]
 const areaList = [""]
 const VolumeList = ["cup", "gal", "mL", "L", "kL"]
-
+if (localStorage.getItem("theme") == "dark") {
+          document.body.setAttribute("data-theme", "dark")
+}
+else {
+          document.body.setAttribute("data-theme", "light")
+}
 //Storage Area Volume Distance Temrature   //
 function converter(unit1, unit2) {
           window.console.log("done")
@@ -291,7 +296,7 @@ function unit(type) {
                     inputContainer.innerHTML = values.join("")
                     outputContainer.innerHTML = values.join("")
                     inputContainer.value = "MB"
-                    outputContainer.value = "KB"
+          outputContainer.value = "GB"
           }
           else if (type == "Volume") {
                     window.console.log("enter 1")

@@ -8,7 +8,12 @@ let startTime = 0, elapsedTime = 0;
 let isRunning = false;
 let currentTimeForLaps=""
 let lapsTimes =[]
-
+if (localStorage.getItem("theme") == "dark") {
+          document.body.setAttribute("data-theme", "dark")
+}
+else {
+          document.body.setAttribute("data-theme", "light")
+}
 function start(state) {
           if (state == "Start") {
                     startBtn.innerText = "Stop"

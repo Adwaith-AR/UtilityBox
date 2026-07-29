@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+
+}
+
 body {
           text-align: center;
           font-family: "Nunito", sans-serif;
           margin: 0px;
-          background: #0b0f19;
-          color: #e5e7eb;
+          background: var(--bg);
+          color: var(--text);
 }
 
 h1 {
@@ -38,7 +54,7 @@ h1 {
 
 button {
           font-family: "Nunito", sans-serif;
-          color: white;
+          color: var(--text);
           font-size: max(5vw, 50px);
           min-height: 10px;
           max-height: 140px;
@@ -74,9 +90,9 @@ button:nth-child(3) {
           justify-self: center;
           border-radius: 20px;
           display: grid;
-          background: #0b0e19;
-          box-shadow: inset 14px 14px 16px #04060a,
-                    inset -14px -14px 16px #121628;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
 }
 
 #lapsContainerHeader>p {
@@ -100,7 +116,7 @@ button:nth-child(3) {
 }
 
 .lapsData>p {
-          font-size: 1.4em;
+          font-size: 1.4em; 
 }
 
 

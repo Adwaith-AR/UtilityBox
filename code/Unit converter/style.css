@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+
+}
+
 body {
           margin: 0px;
           padding: 0px;
           width: 100dvw;
           font-family: "Roboto", sans-serif;
           height: 100dvh;
-          background: #0b0f19;
+          background: var(--bg);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #e8eaf2;
+          color:var(--text);
 
 }
 
@@ -20,9 +36,9 @@ h1 {
           border-radius: 15px;
           width: fit-content;
           padding: 10px;
-          background: #0b0e19;
-          box-shadow: 14px 14px 16px #04060a,
-                    -14px -14px 16px #121628;
+          background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
 }
 
 #mainContainer {
@@ -31,26 +47,26 @@ h1 {
           text-align: center;
           padding: 30px;
           border-radius: 20px;
-          background: #0b0e19;
-          box-shadow: 14px 14px 16px #04060a,
-                    -14px -14px 16px #121628;
+          background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
 }
 
 #mainContainer>div>h2 {
           font-size: 2em;
           text-align: left;
-          color: #8b91a9;
+          color: var(--text);
 }
 
 .dropDown {
-          color: white;
+          color: var(--text);
 
 
 
           border-radius: 15px;
-          background: #0b0e19;
-          box-shadow: inset 14px 14px 16px #04060a,
-                    inset -14px -14px 16px #121628;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
 }
 
 select {
@@ -62,7 +78,8 @@ select {
 }
 
 option {
-          background: black;
+          color: var(--text);
+          background: var(--bg);
           border: none;
 }
 
@@ -93,7 +110,7 @@ option {
           position: absolute;
           list-style: none;
           border-radius: 15px;
-          background: #0f1424;
+          background: var(--bg);
           height: 200px;
           overflow: auto;
 }
@@ -104,29 +121,29 @@ option {
           font-size: 20px;
           margin: 20px;
           border-radius: 10px;
-          background: #0f1424;
-          box-shadow: 5px 5px 3px #06080e,
-                    -5px -5px 3px #18203a;
+          background: var(--bg);
+          box-shadow: 5px 5px 3px var(--darkShade),
+                    -5px -5px 3px var(--lightShade);
 }
 
 .dropDownList li:hover {
-          background: #0f1424;
-          box-shadow: inset 5px 5px 10px #06080e,
-                    inset -5px -5px 10px #18203a;
+          background: var(--bg);
+          box-shadow: inset 5px 5px 10px var(--darkShade),
+                    inset -5px -5px 10px var(--lightShade);
 
 }
 
 input {
           border-radius: 15px;
           width: 90%;
-          background: #0b0e19;
+          background: var(--bg);
           border: none;
           outline: none;
-          color: white;
+          color: var(--text);
           text-align: center;
           font-size: 30px;
-          box-shadow: inset 14px 14px 16px #04060a,
-                    inset -14px -14px 16px #121628;
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
 
 }
 
@@ -147,7 +164,7 @@ input {
 }
 
 #ConvertBtn {
-          color: #ffff;
+          color: var(--text);
           font-weight: 1000;
           font-size: 30px;
           height: 10%;
@@ -156,9 +173,9 @@ input {
           border-radius: 10px;
           margin: 40px;
           margin-left: 0px;
-          background: #0b0e19;
-          box-shadow: 14px 14px 16px #04060a,
-                    -14px -14px 16px #121628;
+          background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
           transition: scale 200ms;
           transition: box-shadow 1s;
 }
@@ -172,8 +189,8 @@ input {
 #ConvertBtn:active {
 
           transition: all 100ms;
-          box-shadow: inset 14px 14px 16px #04060a,
-                    inset -14px -14px 16px #121628;
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
 }
 
 
